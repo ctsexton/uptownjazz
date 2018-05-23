@@ -6,15 +6,20 @@ is_hidden = 0
 [upcomingevents upcoming]
 ==
 <div class="responsive-width">
-<div class="container subtitle normal-text">
-	177 Brunswick St, Fitzroy
-</div>
-<div class="img-gall">
-	<img class="cover-photo" src="storage/app/media/clubpic1.jpg"></img>
-	<img id="charlie" class="cover-photo" src="storage/app/media/charlie-parker-pic.jpg"></img>
-</div>
-<div class="container subtitle medium-text">
-	Upcoming Events:
-</div>
+	<div class="container subtitle normal-text">
+		177 Brunswick St, Fitzroy
+	</div>
+	<div class="img-gall">
+		<img class="cover-photo" src="storage/app/media/clubpic1.jpg"></img>
+		<img id="charlie" class="cover-photo" src="storage/app/media/charlie-parker-pic.jpg"></img>
+	</div>
+	<div class="container container-horizontal reverse">
+		<div class="subtitle medium-text options selected-tab">
+			Upcoming Events
+		</div>
+		<a href={{ navlinks.contact }} class="subtitle medium-text options highlight">
+			Contact / Find Us
+		</a>
+	</div>
 	{% component 'upcoming' %}
 </div>

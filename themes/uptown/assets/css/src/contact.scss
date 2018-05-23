@@ -1,0 +1,9 @@
+#map {
+	width: 100%;
+	margin: 5px 0;
+	height: 300px;
+	background-color: grey;
+	@media #{$mediaMax} {
+		height: 400px;
+	}
+}
