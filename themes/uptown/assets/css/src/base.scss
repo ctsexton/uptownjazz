@@ -76,6 +76,7 @@ body {
 .options {
 	width: 100%;
 	text-decoration: none;
+	cursor: pointer;
 	@media #{$mediaMax} {
 		max-width: 492px;
 	}
@@ -101,4 +102,12 @@ body {
 
 .highlight:hover {
 	background: rgba(255,255,255,0.4);
+}
+
+.showDiv {
+	display: block!important;
+}
+
+.content-hidden {
+	display: none;
 }

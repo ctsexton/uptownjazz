@@ -13,13 +13,31 @@ is_hidden = 0
 		<img class="cover-photo" src="storage/app/media/clubpic1.jpg"></img>
 		<img id="charlie" class="cover-photo" src="storage/app/media/charlie-parker-pic.jpg"></img>
 	</div>
-	<div class="container container-horizontal reverse">
-		<div class="subtitle medium-text options selected-tab">
+	<div id="tab-container" class="container container-horizontal reverse">
+		<div id="upcoming-tab" class="subtitle medium-text options highlight selected-tab">
 			Upcoming Events
 		</div>
-		<a href={{ navlinks.contact }} class="subtitle medium-text options highlight">
+		<div id="contact-tab" class="subtitle medium-text options highlight">
 			Contact / Find Us
-		</a>
+		</div>
 	</div>
+	<div id="upcoming-div" class="content-hidden showDiv">
 	{% component 'upcoming' %}
+	</div>
+	<div id="contact-div" class="content-hidden">
+		<div id="map"></div>
+		<div class="events-item force-word-wrap">
+			<div class="events-item--title">
+				Phone: (03) 9416 4546
+			</div>
+			<div class="events-item--title">
+				Reservations: uptownjazzcafe@email.com
+			</div>
+			<div class="events-item--title">
+				Address: Upstairs, 177 Brunswick St, Fitzroy, Melbourne, Australia
+			</div>
+			<div class="events-item--details">
+			</div>
+		</div>
+	</div>
 </div>
