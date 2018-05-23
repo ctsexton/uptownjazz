@@ -3,14 +3,26 @@
 	width: 100%;
 	position: fixed;
 	height: 50px;
-	background: $backgroundColor_A;
 	z-index: 10;
+	@media screen and (min-width: 1000px) {
+		height: 100px;
+	}
 	&--title {
+		display: block;
+		background: #dddddd;
+		width: 100%;
+		max-width: $maxWidth;
 		font-size: 32px;
 		font-family: $font_A;
-		color: $fontColor_A;
-		margin: 9px 0;
+		color: black;
+		margin: 0 auto;
+		padding: 9px 0;
 		letter-spacing: 0.1rem;
 		text-align: center;
+		@media screen and (min-width: 1000px) {
+			font-size: 64px;
+			margin: 0 auto;
+			padding: 18px 0;
+		}
 	}
 }
