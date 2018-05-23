@@ -1,0 +1,33 @@
+==
+<?php
+function onStart() {
+    $this['navlinks'] = array(
+    'home'=>'/',
+    'schedule'=>'/schedule',
+    'contact'=>'/contact',
+	'submit'=>'/submit',
+    );
+}
+?>
+==
+<!DOCTYPE html>
+<html lang="en">
+    {% partial "head" %}
+    <body>
+        <header>
+            {% partial "top-menu" %}
+        </header>
+        <div id="cts-body">
+            {% page %}
+        </div>
+        <footer>
+        <script src="{{ [
+                '@jquery',
+            ]|theme }}">
+        </script>
+        {% scripts %}
+        {% styles %}
+		{% framework extras %}
+        </footer>
+    </body>
+</html>

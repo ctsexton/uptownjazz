@@ -1,0 +1,16 @@
+.top-menu {
+	display: block;
+	width: 100%;
+	position: fixed;
+	height: 50px;
+	background: $backgroundColor_A;
+	z-index: 10;
+	&--title {
+		font-size: 32px;
+		font-family: $font_A;
+		color: $fontColor_A;
+		margin: 9px 0;
+		letter-spacing: 0.1rem;
+		text-align: center;
+	}
+}
