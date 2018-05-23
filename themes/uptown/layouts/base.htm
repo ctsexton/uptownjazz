@@ -3,9 +3,7 @@
 function onStart() {
     $this['navlinks'] = array(
     'home'=>'/',
-    'schedule'=>'/schedule',
     'contact'=>'/contact',
-	'submit'=>'/submit',
     );
 }
 ?>
@@ -23,8 +21,10 @@ function onStart() {
         <footer>
         <script src="{{ [
                 '@jquery',
+				'assets/javascript/map.js'
             ]|theme }}">
         </script>
+		{% partial "gmap.htm" %}
         {% scripts %}
         {% styles %}
 		{% framework extras %}
