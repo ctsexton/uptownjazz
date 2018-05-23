@@ -1,13 +1,4 @@
 ==
-<?php
-function onStart() {
-    $this['navlinks'] = array(
-    'home'=>'/',
-    'contact'=>'/contact',
-    );
-}
-?>
-==
 <!DOCTYPE html>
 <html lang="en">
     {% partial "head" %}
@@ -21,7 +12,8 @@ function onStart() {
         <footer>
         <script src="{{ [
                 '@jquery',
-				'assets/javascript/map.js'
+				'assets/javascript/map.js',
+				'assets/javascript/tab.js',
             ]|theme }}">
         </script>
 		{% partial "gmap.htm" %}
