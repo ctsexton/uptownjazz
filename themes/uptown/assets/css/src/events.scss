@@ -7,6 +7,7 @@
 	color: $fontColor_A;
 	font-family: $font_B;
 	&--title {
+		display: block;
 		font-size: 1.5rem;
 		font-weight: 400;
 		line-height: 1em;
@@ -15,9 +16,24 @@
 		font-size: 1em;
 		line-height: 1.25em;
 		margin: 5px 0;
+		a {
+			text-decoration: underline;
+			color: #cccccc;
+		}
 	}
-	@media screen and (min-width: 820px) {
-		width: 800px;
+	@media #{$mediaMax} {
+		width: 100%;
 		margin: 5px auto;
 	}
 }
+
+
+.events-item--photo {
+	width: 40%;
+	float: right;
+	margin: 5px;
+	@media screen and (min-width: 900px) {
+		width: auto;
+	}
+}
+

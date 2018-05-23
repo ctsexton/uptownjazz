@@ -3,15 +3,19 @@ body {
 }
 
 #cts-body {
-	position: absolute;
+	position: relative;
 	top: 50px;
 	width: 100%;
 	padding: 5px;
 	margin: 0;
+	@media screen and (min-width: 1000px) {
+		top: 100px;
+	}
 }
 
 .container {
 	display: flex;
+
 }
 
 .container-vertical {
@@ -20,12 +24,44 @@ body {
 
 .responsive-width {
 	width: 100%;
-	max-width: 100%;
-	margin: 0;
+	max-width: $maxWidth;
+	margin: 0 auto;
 
 }
 
 .force-word-wrap {
 	word-wrap: break-word;
 	word-break: break-word;
+}
+
+.info-text {
+	display: block;
+	background: #dddddd;
+	color: $fontColor_B;
+	font-family: $font_B;
+	font-size: 1rem;
+	text-align: center;
+	padding: 5px;
+}
+
+.subtitle {
+	font-weight: 500;
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	color: $fontColor_A;
+	font-family: $font_A;
+	background: rgba(255,255,255,0.25);
+	//background: linear-gradient(90deg,rgba(255,255,255,0.5),rgba(255,255,255,0));
+}
+
+.medium-text {
+	font-size: 2rem;
+	letter-spacing: 0.05em;
+}
+
+.normal-text {
+	font-size: 1.5em;
+	letter-spacing: 0.025em;
 }

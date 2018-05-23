@@ -3,9 +3,16 @@
 	{% for event in upcoming.events %}
 	<div class="events-item sticky force-word-wrap">
 		<div class="events-item--title">{{ event.title }}</div>
-		<div class="events-item--details">{{ event.format_date }}</div>
-		<div class="events-item--details">{{ event.venue }}</div>
-		<div class="events-item--details">{{ event.description|raw}}</div>
+		<img class="events-item--photo" src={{ event.photo_url }}></img>
+		<p>
+		<span class="events-item--details">{{ event.format_date }}</span>
+		<br>
+		<br>
+		<span class="events-item--details">
+			{{ event.description|raw}}
+		</span>
+		</p>
+
 	</div>
 	{% endfor %}
 </div>
