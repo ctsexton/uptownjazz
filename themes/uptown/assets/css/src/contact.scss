@@ -7,3 +7,11 @@
 		height: 400px;
 	}
 }
+
+.smaller-text {
+	font-size: 0.9em;
+	@media #{$mediaMax} {
+		display: inline;
+		font-size: 1em;
+	}
+}
