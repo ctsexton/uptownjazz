@@ -12,9 +12,11 @@
 
 .cover-photo {
 	display: block;
+	flex-basis: 492px;
 	width: 100%;
 	height: 100%;
 	max-width: 492px;
+	max-height: 314px;
 	margin: 5px 0 0;
 }
 

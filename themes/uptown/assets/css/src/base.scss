@@ -75,6 +75,7 @@ body {
 
 .options {
 	width: 100%;
+	flex-basis: 492px;
 	text-decoration: none;
 	cursor: pointer;
 	@media #{$mediaMax} {
